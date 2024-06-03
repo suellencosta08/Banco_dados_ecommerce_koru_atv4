@@ -26,11 +26,11 @@ RIGHT JOIN Clientes ON Pedidos.id_cliente = Clientes.id_cliente;
 
 -- O FULL JOIN retorna todos os registros quando há uma correspondência na tabela à esquerda ou à direita. 
 -- Se não houver correspondência, o resultado é NULL para o lado sem correspondência.
--- OBS MEU SISTEMA NÃO SUPORTA FULL JOIN 
+ 
 
-SELECT Pedidos.id_pedido, Pedidos.data_pedido, Clientes.nome
-FROM Pedidos
-FULL JOIN Clientes ON Pedidos.id_cliente = Clientes.id_cliente;
+SELECT * FROM Pedidos 
+FULL JOIN Clientes
+ON id_pedido = Clientes.id_cliente;
 
 -- SUBCONSULTAS
 
